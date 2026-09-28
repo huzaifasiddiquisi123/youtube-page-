@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(255, 255, 255);
+            color: rgb(20, 20, 20);
+        }
+
+        .header {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            border-bottom: 1px solid rgb(220, 220, 220);
+        }
+
+        .menu {
+            font-size: 20px;
+            margin-right: 25px;
+        }
+
+        .logo {
+            color: rgb(255, 0, 0);
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            font-size: 25px;
+        }
+
+        .search {
+            width: 55%;
+            height: 40px;
+            margin-left: 150px;
+            display: flex;
+        }
+
+        .search input {
+            width: 90%;
+            height: 40px;
+            border: 1px solid rgb(200, 200, 200);
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        .search button {
+            width: 60px;
+            height: 40px;
+            border: 1px solid rgb(200, 200, 200);
+            background: rgb(245, 245, 245);
+            font-size: 16px;
+        }
+
+        .microphone {
+            margin-left: 15px;
+            font-size: 17px;
+        }
+
+        .icons {
+            margin-left: auto;
+            display: flex;
+            gap: 25px;
+            font-size: 18px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 225px;
+            min-height: 590px;
+            padding-top: 15px;
+            border-right: 1px solid rgb(230, 230, 230);
+        }
+
+        .sidebar div {
+            padding: 14px 25px;
+            font-size: 14px;
+        }
+
+        .sidebar div i {
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .sidebar div:hover {
+            background: rgb(235, 235, 235);
+        }
+
+        .home {
+            background: rgb(230, 230, 230);
+            font-weight: bold;
+        }
+
+        .content {
+            width: calc(100% - 225px);
+            padding: 20px 35px;
+        }
+
+        .categories {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .categories button {
+            border: 1px solid rgb(220, 220, 220);
+            background: rgb(245, 245, 245);
+            padding: 9px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .categories button:first-child {
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px 18px;
+        }
+
+        .video {
+            width: 23%;
+        }
+
+        .video img {
+            width: 100%;
+            height: 145px;
+            object-fit: cover;
+        }
+
+        .video h3 {
+            font-size: 15px;
+            margin-top: 10px;
+            line-height: 20px;
+        }
+
+        .video p {
+            color: rgb(100, 100, 100);
+            font-size: 13px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <i class="fa-brands fa-youtube"></i>
+            YouTube
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="microphone">
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-grip"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="sidebar">
+
+            <div class="home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </div>
+
+            <div>
+                <i class="fa-regular fa-compass"></i>
+                Explore
+            </div>
+
+            <div>
+                <i class="fa-solid fa-play"></i>
+                Subscriptions
+            </div>
+
+            <br>
+
+            <div>
+                <i class="fa-solid fa-photo-film"></i>
+                Library
+            </div>
+
+            <div>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                History
+            </div>
+
+            <div>
+                <i class="fa-solid fa-video"></i>
+                Your videos
+            </div>
+
+            <div>
+                <i class="fa-regular fa-clock"></i>
+                Watch later
+            </div>
+
+            <div>
+                <i class="fa-solid fa-thumbs-up"></i>
+                Liked videos
+            </div>
+
+            <br>
+
+            <div>
+                <b>SUBSCRIPTIONS</b>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-music"></i>
+                Music
+            </div>
+
+            <div>
+                <i class="fa-solid fa-trophy"></i>
+                Sports
+            </div>
+
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                Gaming
+            </div>
+
+            <div>
+                <i class="fa-solid fa-newspaper"></i>
+                News
+            </div>
+
+        </div>
+
+
+        <div class="content">
+
+            <div class="categories">
+                <button>All</button>
+                <button>Music</button>
+                <button>Mixes</button>
+                <button>User interface design</button>
+                <button>Nollywood</button>
+                <button>Logos</button>
+                <button>Graphic design</button>
+                <button>Website</button>
+                <button>Computer Science</button>
+                <button>Contemporary</button>
+            </div>
+
+
+            <div class="videos">
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80">
+                    <h3>4-Year Medical Doctor (MD) Degree in UK</h3>
+                    <p>Ready to start med school?</p>
+                    <p>AUC School of Medicine</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80">
+                    <h3>UI Design Trends 2021</h3>
+                    <p>DesignSense</p>
+                    <p>521K views • 5 months ago</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80">
+                    <h3>Simi - Complete Me | Official Video</h3>
+                    <p>X3M Music</p>
+                    <p>3.7M views • 3 years ago</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80">
+                    <h3>Data Analyst Career Switch</h3>
+                    <p>The Work Life Man</p>
+                    <p>56K views • 1 month ago</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80">
+                    <h3>Stubborn Billionaires Complete</h3>
+                    <p>Comedy Channel</p>
+                    <p>100K views • 2 weeks ago</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80">
+                    <h3>Linda Osifo and Olakira</h3>
+                    <p>The Ndani TGIF Show</p>
+                    <p>80K views • 1 month ago</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80">
+                    <h3>Designing a Complete Brand Identity</h3>
+                    <p>Graphic Design</p>
+                    <p>100K views • 2 weeks ago</p>
+                </div>
+
+                <div class="video">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80">
+                    <h3>7 Mistakes Ladies Make When They Like a Guy</h3>
+                    <p>Design Channel</p>
+                    <p>56K views • 3 weeks ago</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
